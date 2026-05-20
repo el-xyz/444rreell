@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arel Fadliansyah | Creative Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .portfolio-card {
+            background: #141414;
+            border: 1px solid #262626;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+
+        .portfolio-card:hover {
+            border-color: #525252;
+            transform: translateY(-5px);
+        }
+
+        .btn-action {
+            background: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            padding: 0.75rem 2.5rem;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-action:hover {
+            background: #a3a3a3;
+        }
+
+        .nav-link:hover {
+            color: #a3a3a3;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-8 px-10 md:px-20 sticky top-0 z-50 backdrop-blur-md bg-black/50">
+        <div class="text-xl font-bold tracking-tighter hover:opacity-70 transition-opacity cursor-pointer">AREL FADLIANSYAH</div>
+        <div class="hidden md:flex space-x-12 text-sm font-medium tracking-widest uppercase opacity-60">
+            <a href="#" class="nav-link transition-all">Home</a>
+            <a href="#about" class="nav-link transition-all">Profile</a>
+            <a href="#projects" class="nav-link transition-all">Works</a>
+            <a href="#contact" class="nav-link transition-all">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center px-10 md:px-20 relative overflow-hidden">
+        <h1 class="text-7xl md:text-[12rem] font-bold leading-none tracking-tighter mb-8 italic">
+            VISUAL<br>STUDIO
+        </h1>
+        <p class="text-lg md:text-2xl max-w-xl opacity-60 font-light mb-12">
+            Visual storyteller specializing in Photography, Editing, and Graphic Design.
+DKV student exploring creativity through impactful visuals.
+
+        </p>
+        <div>
+            <a href="#projects" class="btn-action text-sm uppercase tracking-widest no-underline inline-block">View Works</a>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="about" class="py-32 px-10 md:px-20 border-t border-neutral-900">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-10 uppercase tracking-tighter">Profile</h2>
+                <p class="text-xl leading-relaxed opacity-60 font-light">
+                        Halo! Saya adalah mahasiswa Desain Komunikasi Visual yang berfokus pada estetika visual dan komunikasi efektif. Melalui lensa kamera, komposisi desain, dan ketelitian dalam editing, saya berusaha menciptakan karya yang tidak hanya indah dipandang, tetapi juga memiliki makna mendalam.
+                </p>
+            </div>
+            <div class="aspect-square bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <img src="https://via.placeholder.com/600?text=Profile+Image" alt="Profile" class="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition-all">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 px-10 md:px-20 bg-white text-black">
+        <div class="flex justify-between items-end mb-20">
+            <h2 class="text-6xl font-bold tracking-tighter uppercase leading-none">Selected<br>Works</h2>
+            <p class="opacity-50 text-sm tracking-widest">001 — 003</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Card 1 -->
+            <a href="editing.html" class="group relative aspect-[3/4] overflow-hidden bg-neutral-100">
+                <img src="https://via.placeholder.com/600x800?text=Editing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all flex flex-col justify-end p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-2">Editing</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">Digital Visual Processing</p>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="photography.html" class="group relative aspect-[3/4] overflow-hidden bg-neutral-100">
+                <img src="https://via.placeholder.com/600x800?text=Photography" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all flex flex-col justify-end p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-2">Photography</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">Visual Storytelling</p>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="design.html" class="group relative aspect-[3/4] overflow-hidden bg-neutral-100">
+                <img src="https://via.placeholder.com/600x800?text=Design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all flex flex-col justify-end p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-2">Design</h3>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity">Graphic Identity</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-10 md:px-20 bg-neutral-950">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-8 uppercase tracking-tighter">Get In Touch</h2>
+            <p class="mb-16 opacity-60 font-light">Tertarik untuk berkolaborasi? Silakan kirim pesan di bawah ini.</p>
+            <form class="space-y-6 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Nama Lengkap" class="w-full bg-transparent border-b border-neutral-800 py-4 focus:outline-none focus:border-white transition-colors">
+                    <input type="email" placeholder="Alamat Email" class="w-full bg-transparent border-b border-neutral-800 py-4 focus:outline-none focus:border-white transition-colors">
+                </div>
+                <textarea placeholder="Pesan Anda..." rows="4" class="w-full bg-transparent border-b border-neutral-800 py-4 focus:outline-none focus:border-white transition-colors"></textarea>
+                <div class="text-center pt-10">
+                    <button type="submit" class="btn-action w-full md:w-auto">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 px-10 md:px-20 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center opacity-40 text-xs tracking-widest uppercase">
+        <p>&copy; 2026 444RREELL. ALL RIGHTS RESERVED.</p>
+        <div class="flex space-x-8 mt-4 md:mt-0">
+            <a href="#">Instagram</a>
+            <a href="#">Behance</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
